@@ -4,6 +4,11 @@ module.exports = {
   coverageDirectory: 'coverage',
   testEnvironment: 'node',
   preset: '@shelf/jest-mongodb',
+  globals: {
+    'ts-jest': {
+      diagnostics: false
+    }
+  },
   transform: {
     '.+\\.ts$': 'ts-jest'
   }
